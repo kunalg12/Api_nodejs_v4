@@ -2,7 +2,8 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   if (req.method === "GET" && req.url === "/") {
-    res.end("Hello World");
+    console.log("Hello world from Node.js");
+    res.end();
   }
 });
 
